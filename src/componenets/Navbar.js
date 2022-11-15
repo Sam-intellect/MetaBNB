@@ -11,8 +11,11 @@ import {
   MobileIcon,
   NavLogo,
 } from './styles/Navbar.styled';
+import React, { useState } from 'react';
+import Modal from './Modal';
 
 export default function Navbar({ toggle }) {
+  const [openModal, setOpenModal] = useState(false);
   return (
     <>
       <Container>
@@ -26,24 +29,27 @@ export default function Navbar({ toggle }) {
           </MobileIcon>
 
           <NavMenu>
-            <NavLink to="/about" activeStyle>
+            <NavLink to="/" activeStyle>
               Home
             </NavLink>
-            <NavLink to="/place" activeStyle>
+            <NavLink to="/" activeStyle>
               Place to Stay
             </NavLink>
             <NavLink to="/nfts" activeStyle>
               NFTs
             </NavLink>
-            <NavLink to="/community" activeStyle>
+            <NavLink to="/" activeStyle>
               Community
             </NavLink>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to="/wallet">Connect Wallect</NavBtnLink>
+            <NavBtnLink onClick={() => setOpenModal(true)}>
+              Connect Wallect
+            </NavBtnLink>
           </NavBtn>
         </NavbarStyled>
       </Container>
+      <Modal open={openModal} onClose={() => setOpenModal(false)} />
     </>
   );
 }

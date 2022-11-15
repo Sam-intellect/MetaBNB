@@ -1,14 +1,17 @@
 import { ThemeProvider } from 'styled-components';
 import GlobalStyles from './componenets/styles/Global';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Home from './componenets/Home';
+import Footer from './componenets/Footer';
+import NftLink from './componenets/NftLink';
+import NavigationBar from './componenets/NavigationBar';
 
 const theme = {
   colors: {
     primary: '#FFFFFF',
     secondary: '#A02279',
     text: '#434343',
-    footer: '#1D1D1E',
+    footer: 'black',
   },
 };
 
@@ -16,10 +19,15 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <>
-        <Router>
-          <GlobalStyles />
-          <Home />
-        </Router>
+        <GlobalStyles />
+        <NavigationBar />
+        <Routes>
+          <Route>
+            <Route path="/" element={<Home />} />
+            <Route path="/nfts" element={<NftLink />} />
+          </Route>
+        </Routes>
+        <Footer />
       </>
     </ThemeProvider>
   );

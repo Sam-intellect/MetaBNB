@@ -10,6 +10,12 @@ export const Main = styled.div`
   @media screen and (max-width: 768px) {
     margin-bottom: 10.5rem;
   }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    height: 100%;
+
+    margin-top: 20rem;
+    margin-bottom: 20rem;
+  }
 `;
 
 export const LeftMain = styled.div`
@@ -24,6 +30,14 @@ export const LeftMain = styled.div`
     text-align: center;
     margin-top: -20px;
   }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    margin-top: -100px;
+  }
+  /* @media (min-width: 769px) {
+    text-align: center;
+    margin-top: -130rem;
+  } */
 `;
 export const MainText = styled.h6`
   font-size: 6rem;
@@ -33,6 +47,9 @@ export const MainText = styled.h6`
 
   @media screen and (max-width: 768px) {
     font-size: 3.3rem;
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    font-size: 4rem;
   }
 `;
 export const Span = styled.span`
@@ -59,6 +76,11 @@ export const MainParagraph = styled.p`
     text-justify: inter-word;
     top: -5rem;
   }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    font-size: 15px;
+    top: -9rem;
+  }
 `;
 
 export const InputField = styled.div`
@@ -69,6 +91,9 @@ export const InputField = styled.div`
 
   @media screen and (max-width: 768px) {
     top: -4rem;
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    top: -8rem;
   }
 `;
 

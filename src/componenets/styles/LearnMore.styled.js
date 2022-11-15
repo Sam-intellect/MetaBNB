@@ -8,16 +8,17 @@ export const LearnMore = styled.div`
   padding: 25px;
 
   @media screen and (max-width: 768px) {
-    height: 50vh;
+    height: 40vh;
   }
 `;
 
 export const Main = styled.div`
   display: flex;
+  margin-top: 10%;
 `;
 export const Left = styled.div`
   width: 50%;
-  margin-top: 30%;
+  margin-top: 10%;
   color: ${({ theme }) => theme.colors.primary};
 `;
 export const Head = styled.h1`
@@ -63,11 +64,14 @@ export const LearnBtn = styled(Link)`
 
 export const Right = styled.div`
   width: 50%;
-  margin-top: 20%;
 
   @media screen and (max-width: 768px) {
-    margin-top: 40%;
+    margin-top: 30%;
   }
 `;
-export const SideImage = styled.div``;
+export const SideImage = styled.div`
+  @media (min-width: 768px) and (max-width: 1024px) {
+    margin-top: 15rem;
+  }
+`;
 export const Side = styled.img``;

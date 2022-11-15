@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Modal from './Modal';
 import {
   SideBarContainer,
   Icon,
@@ -11,23 +12,29 @@ import {
 } from './styles/SideBar.styled';
 
 const SideBar = ({ isOpen, toggle }) => {
+  const [openModal, setOpenModal] = useState(false);
   return (
-    <SideBarContainer isOpen={isOpen}>
-      <Icon onClick={toggle}>
-        <CloseIcon />
-      </Icon>
-      <SidebarWrapper>
-        <SidebarMenu>
-          <SideBarLink to="/about">Home</SideBarLink>
-          <SideBarLink to="/place">Place to Stay</SideBarLink>
-          <SideBarLink to="/nfts">NFTs</SideBarLink>
-          <SideBarLink to="/community">Community</SideBarLink>
-        </SidebarMenu>
-        <SideBtnWrap>
-          <SideBarRoute to="/wallet">Connect Wallect</SideBarRoute>
-        </SideBtnWrap>
-      </SidebarWrapper>
-    </SideBarContainer>
+    <>
+      <SideBarContainer isOpen={isOpen}>
+        <Icon onClick={toggle}>
+          <CloseIcon />
+        </Icon>
+        <SidebarWrapper>
+          <SidebarMenu>
+            <SideBarLink to="/">Home</SideBarLink>
+            <SideBarLink to="/">Place to Stay</SideBarLink>
+            <SideBarLink to="/nfts">NFTs</SideBarLink>
+            <SideBarLink to="/">Community</SideBarLink>
+          </SidebarMenu>
+          <SideBtnWrap>
+            <SideBarRoute onClick={() => setOpenModal(true)}>
+              Connect Wallect
+            </SideBarRoute>
+          </SideBtnWrap>
+        </SidebarWrapper>
+      </SideBarContainer>
+      <Modal open={openModal} onClose={() => setOpenModal(false)} />
+    </>
   );
 };
 

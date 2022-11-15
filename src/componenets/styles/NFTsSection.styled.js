@@ -1,13 +1,14 @@
 import styled from 'styled-components';
 
-export const Main = styled.div`
+export const Main = styled.section`
   width: 100%;
+  height: 100%;
+  margin-bottom: 20rem;
 
-  @media (min-width: 1200px) {
-    height: 100vh;
-  }
   @media screen and (max-width: 768px) {
+    height: 100vh;
     margin-bottom: 3rem;
+    height: 100%;
   }
 `;
 export const TitleText = styled.div`
