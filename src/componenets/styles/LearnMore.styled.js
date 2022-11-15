@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export const LearnMore = styled.div`
   width: 100vw;
-  height: 100vh;
+  height: 80vh;
   background-color: ${({ theme }) => theme.colors.secondary};
   padding: 25px;
 

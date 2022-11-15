@@ -4,6 +4,7 @@ import Navbar from './Navbar';
 import HeroSection from './HeroSection';
 import NFTsSection from './NFTsSection';
 import LearnMoreSection from './LearnMoreSection';
+import Footer from './Footer';
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,6 +19,7 @@ const Home = () => {
       <HeroSection />
       <NFTsSection />
       <LearnMoreSection />
+      <Footer />
     </>
   );
 };
