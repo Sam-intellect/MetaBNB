@@ -6,6 +6,7 @@ import {
   Location,
   LocationInput,
   LocationIcon,
+  LinkMain,
 } from './styles/place.styled';
 import { NFTs } from './styles/NFTsSection.styled';
 import NFTprops from './NFTprops';
@@ -16,14 +17,16 @@ const NftLink = () => {
       <Container>
         <Main>
           <UpperLinks>
-            <Links>Resturant</Links>
-            <Links>Cottage</Links>
-            <Links>Castle</Links>
-            <Links>fantast city</Links>
-            <Links>beach</Links>
-            <Links>Carbins</Links>
-            <Links>Off-grid</Links>
-            <Links>Farm</Links>
+            <LinkMain>
+              <Links>Resturant</Links>
+              <Links>Cottage</Links>
+              <Links>Castle</Links>
+              <Links>fantast city</Links>
+              <Links>beach</Links>
+              <Links>Carbins</Links>
+              <Links>Off-grid</Links>
+              <Links>Farm</Links>
+            </LinkMain>
 
             <Location>
               <LocationInput type="text" name="search" placeholder="Location" />

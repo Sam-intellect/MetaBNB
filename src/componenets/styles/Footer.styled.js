@@ -8,23 +8,49 @@ export const MainFooter = styled.section`
 export const Main = styled.footer`
   display: flex;
   justify-content: space-between;
-`;
 
-export const LogoSocialMedia = styled.div`
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+`;
+export const Other = styled.div`
   display: flex;
-  gap: 2px;
-  color: white;
+  justify-content: space-between;
+  margin-bottom: 3rem;
 `;
 
-export const Logo1 = styled.div`
-  width: 7rem;
-  margin-top: 1rem;
+export const Logo = styled.div`
+  display: flex;
+  gap: 15px;
+  color: white;
+  margin-top: 4rem;
 `;
-export const Logo2 = styled.div`
-  width: 3rem;
-  margin-top: 1rem;
-  fill: 'white';
+export const LogoSocialMedia = styled.div`
+  @media screen and (max-width: 768px) {
+    align-items: center;
+  }
 `;
+
+export const Logo1 = styled.div``;
+export const Logo2 = styled.div``;
+export const SocialLink = styled.div`
+  display: flex;
+  gap: 2rem;
+  color: white;
+  margin-top: 4rem;
+`;
+export const FaceB = styled.div``;
+export const Copyright = styled.div`
+  display: flex;
+  gap: 1rem;
+  color: white;
+  margin-top: 2rem;
+`;
+export const CopyrightLogo = styled.div``;
+export const CopyrightText = styled.h4`
+  margin-top: 0;
+`;
+
 export const Community = styled.a`
   color: white;
   cursor: pointer;
