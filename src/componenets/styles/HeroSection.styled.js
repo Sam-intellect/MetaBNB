@@ -5,6 +5,11 @@ export const Main = styled.div`
   width: 100%;
   margin-top: 10%;
   display: flex;
+  margin-bottom: 15rem;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 10.5rem;
+  }
 `;
 
 export const LeftMain = styled.div`
@@ -21,8 +26,10 @@ export const LeftMain = styled.div`
   }
 `;
 export const MainText = styled.h6`
-  font-size: 60px;
+  font-size: 6rem;
   font-weight: normal;
+  /* text-align: justify;
+  text-justify: inter-word; */
 
   @media screen and (max-width: 768px) {
     font-size: 3.3rem;
@@ -38,7 +45,7 @@ export const MainParagraph = styled.p`
   font-size: 25px;
   font-weight: lighter;
   position: relative;
-  top: -10rem;
+  top: -13rem;
   text-align: justify;
   text-justify: inter-word;
   width: 80%;
@@ -113,11 +120,7 @@ export const RightMain = styled.div`
   top: 8rem;
 
   @media screen and (max-width: 768px) {
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    text-align: center;
-    margin-top: -20px;
+    display: none;
   }
 `;
 export const First = styled.div`
@@ -126,4 +129,19 @@ export const First = styled.div`
 `;
 export const Second = styled.div``;
 export const NFT1 = styled.div``;
-export const NFT = styled.img``;
+export const NFT = styled.img`
+  width: 120rem;
+`;
+
+export const HeroFooter = styled.div`
+  width: 100vw;
+  height: 75px;
+  align-items: center;
+  background-color: ${({ theme }) => theme.colors.secondary};
+
+  @media screen and (max-width: 768px) {
+    height: 100%;
+  }
+`;
+
+export const FooterLogo = styled.img``;

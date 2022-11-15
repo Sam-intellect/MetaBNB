@@ -1,5 +1,4 @@
 import { ThemeProvider } from 'styled-components';
-import { Container } from './componenets/styles/Container.styled';
 import GlobalStyles from './componenets/styles/Global';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Home from './componenets/Home';
@@ -19,9 +18,7 @@ function App() {
       <>
         <Router>
           <GlobalStyles />
-          <Container>
-            <Home />
-          </Container>
+          <Home />
         </Router>
       </>
     </ThemeProvider>

@@ -93,7 +93,7 @@ export const Logo2 = styled.img`
   margin-top: 1rem;
 `;
 
-export const NavLogo = styled.div`
+export const NavLogo = styled(Link)`
   display: flex;
   gap: 2px;
 `;
