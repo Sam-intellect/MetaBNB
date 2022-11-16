@@ -22,10 +22,10 @@ export const ModalContainer = styled.div`
   border-radius: 24px;
 
   @media screen and (max-width: 768px) {
-    height: 30vh;
-    width: 100vw;
+    height: 40vh;
+    width: 90vw;
 
-    top: 0;
+    top: 17rem;
     left: 1rem;
   }
 
