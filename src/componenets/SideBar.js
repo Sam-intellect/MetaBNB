@@ -21,10 +21,18 @@ const SideBar = ({ isOpen, toggle }) => {
         </Icon>
         <SidebarWrapper>
           <SidebarMenu>
-            <SideBarLink to="/">Home</SideBarLink>
-            <SideBarLink to="/">Place to Stay</SideBarLink>
-            <SideBarLink to="/nfts">NFTs</SideBarLink>
-            <SideBarLink to="/">Community</SideBarLink>
+            <SideBarLink onClick={toggle} to="/">
+              Home
+            </SideBarLink>
+            <SideBarLink onClick={toggle} to="/">
+              Place to Stay
+            </SideBarLink>
+            <SideBarLink onClick={toggle} to="/nfts">
+              NFTs
+            </SideBarLink>
+            <SideBarLink onClick={toggle} to="/">
+              Community
+            </SideBarLink>
           </SidebarMenu>
           <SideBtnWrap>
             <SideBarRoute onClick={() => setOpenModal(true)}>

@@ -22,9 +22,11 @@ export const ModalContainer = styled.div`
   border-radius: 24px;
 
   @media screen and (max-width: 768px) {
-    height: 50vh;
+    height: 30vh;
+    width: 100vw;
+
     top: 0;
-    left: 0;
+    left: 1rem;
   }
 
   @media (min-width: 768px) and (max-width: 1024px) {
@@ -76,6 +78,7 @@ export const MetamaskBtn = styled.div`
   padding: 0 25px;
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
 `;
 export const Btt = styled.div`
   display: flex;

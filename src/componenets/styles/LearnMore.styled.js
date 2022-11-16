@@ -18,7 +18,7 @@ export const Main = styled.div`
 `;
 export const Left = styled.div`
   width: 50%;
-  margin-top: 10%;
+  margin-top: 2%;
   color: ${({ theme }) => theme.colors.primary};
 `;
 export const Head = styled.h1`

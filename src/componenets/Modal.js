@@ -38,7 +38,7 @@ const Modal = ({ open, onClose }) => {
           <Lower>
             <Option>Choose your preferred wallet:</Option>
             <Choose>
-              <MetamaskBtn>
+              <MetamaskBtn onClick={() => console.log('Xup')}>
                 <Btt>
                   <MetaImg src="./images/meta.svg" />
                   <MetaDesc>Metamask</MetaDesc>
@@ -46,7 +46,7 @@ const Modal = ({ open, onClose }) => {
 
                 <MetaArrow src="./images/arrow.svg" />
               </MetamaskBtn>
-              <MetamaskBtn>
+              <MetamaskBtn onClick={() => console.log('Xup')}>
                 <Btt>
                   <MetaImg src="./images/connect.svg" />
                   <MetaDesc>WalletConnect</MetaDesc>

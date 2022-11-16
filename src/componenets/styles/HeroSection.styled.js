@@ -6,7 +6,6 @@ export const Main = styled.div`
   margin-top: 10%;
   display: flex;
   margin-bottom: 15rem;
-
   @media screen and (max-width: 768px) {
     margin-bottom: 10.5rem;
   }
@@ -104,6 +103,7 @@ export const SearchInput = styled.input`
   font-size: 1.5rem;
   border-top-left-radius: 13px;
   border-bottom-left-radius: 13px;
+  border: 1px solid;
   color: ${({ theme }) => theme.colors.text};
 
   @media screen and (max-width: 768px) {
