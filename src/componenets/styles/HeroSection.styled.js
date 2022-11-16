@@ -107,7 +107,7 @@ export const SearchInput = styled.input`
   color: ${({ theme }) => theme.colors.text};
 
   @media screen and (max-width: 768px) {
-    font-size: 1.5px;
+    font-size: 15px;
     width: 70%;
     height: 3rem;
     top: -7rem;
