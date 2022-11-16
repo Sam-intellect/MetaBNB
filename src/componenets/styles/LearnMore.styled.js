@@ -30,7 +30,7 @@ export const Head = styled.h1`
 `;
 export const Content = styled.p`
   font-size: 2rem;
-  font-weight: lighter;
+  font-weight: light;
   text-align: justify;
   text-justify: inter-word;
   width: 80%;

@@ -8,6 +8,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   overflow: hidden;
+  
   body {
     background: ${({ theme }) => theme.colors.primary};
     color: hsl(192, 100%, 9%);
