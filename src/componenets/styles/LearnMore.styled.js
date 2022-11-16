@@ -64,10 +64,6 @@ export const LearnBtn = styled(Link)`
 
 export const Right = styled.div`
   width: 50%;
-
-  @media screen and (max-width: 768px) {
-    margin-top: 30%;
-  }
 `;
 export const SideImage = styled.div`
   @media (min-width: 768px) and (max-width: 1024px) {

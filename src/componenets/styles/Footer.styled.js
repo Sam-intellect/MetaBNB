@@ -17,10 +17,14 @@ export const Other = styled.div`
   display: flex;
   justify-content: space-between;
   margin-bottom: 3rem;
+  width: 60%;
 
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media screen and (max-width: 768px) {
     margin-top: 2rem;
-    width: 60%;
+    align-items: center;
+    /* justify-content: center; */
+
+    width: 90%;
   }
 `;
 
