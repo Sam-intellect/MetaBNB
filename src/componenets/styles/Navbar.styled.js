@@ -44,7 +44,7 @@ export const Bars = styled(FaBars)`
   @media screen and (max-width: 768px) {
     display: block;
     position: absolute;
-    top: 25px;
+    top: 38px;
     right: 20px;
     transform: translate(-100% 75%);
     font-size: 1.8rem;

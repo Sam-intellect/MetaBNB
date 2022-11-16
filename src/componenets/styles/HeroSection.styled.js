@@ -71,7 +71,9 @@ export const MainParagraph = styled.p`
     height: 100%;
     padding: 0;
     font-size: 15px;
+    font-weight: normal;
     text-align: justify;
+    color: black;
     text-justify: inter-word;
     top: -5rem;
   }

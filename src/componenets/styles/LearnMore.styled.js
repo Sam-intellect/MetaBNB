@@ -38,7 +38,7 @@ export const Content = styled.p`
 
   @media screen and (max-width: 768px) {
     margin-bottom: 1rem;
-    font-size: 10px;
+    font-size: 7px;
   }
 `;
 export const LearnBtn = styled(Link)`
